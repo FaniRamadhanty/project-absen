@@ -16,10 +16,10 @@ class Kehadiran extends Model
         return $this->belongsTo('App\Models\Pegawai','id_pegawai');
     }
 
-    public function Absen()
-    {
-        return $this->hasMany('App\Models\Absen','id_kehadiran');
-    }
+    // public function Absen()
+    // {
+    //     return $this->hasMany('App\Models\Absen','id_kehadiran');
+    // }
    
     use HasFactory;
 

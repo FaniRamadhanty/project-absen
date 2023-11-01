@@ -1,20 +1,18 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Models\Pegawai;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class AbsenController extends Controller
 {
     public function index()
     {
-       
-        $pegawais = Pegawai::where('id')->first();
+        $user = User::all();
 
-        return view('admin.absen.index', compact('pegawais'));
-      
-
+        return view('admin.absen.index', compact('user'));
     }
+
         public function create()
         {
            

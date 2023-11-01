@@ -16,9 +16,9 @@ class Hadir extends Model
         return $this->belongsTo('App\Models\Pegawai','id_pegawai');
     }
 
-    public function Absen()
-    {
-        return $this->hasMany('App\Models\Absen','id_hadir');
-    }
+    // public function Absen()
+    // {
+    //     return $this->hasMany('App\Models\Absen','id_hadir');
+    // }
     use HasFactory;
 }

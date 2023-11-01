@@ -20,10 +20,10 @@ class Pegawai extends Model
         return $this->hasMany('App\Models\Hadir','id_pegawai');
     }
 
-    public function Absen()
-    {
+    // public function Absen()
+    // {
         
-        return $this->hasMany('App\Models\Absen','id_pegawai');
-    }
+    //     return $this->hasMany('App\Models\Absen','id_pegawai');
+    // }
     use HasFactory;
 }
